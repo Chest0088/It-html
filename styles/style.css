@@ -16,37 +16,37 @@
   display: flex;
 
 }
-.Sup {
+.sup-port {
     padding-top: 108px;
     padding-left: 214px;
 }
-.Com {
+.com-direct {
   padding-top: 112px;
   padding-left: 231px;
 }
-.book {
+.book-online {
   padding-top: 120px;
   padding-left: 221px;
 }
-.real {
+.real-review {
   padding-top: 108px;
   padding-left: 216px;
 }
 
-.sup {
+.supPort {
   padding-top: 52px;
 padding-left: 210px;
 }
-.com{
+.comMun{
     padding-top: 56px;
   align-items: center;
     padding-left: 210px;
 }
-.bok{
+.bokOnli{
     padding-top: 64px;
     padding-left: 210px;
 }
-.rel{
+.relQuest{
     padding-top: 60px;
     padding-left: 210px;
 }
