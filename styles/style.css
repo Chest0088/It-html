@@ -1,0 +1,52 @@
+.heder {
+  font-size: 40px;
+  text-align: center;
+  padding-top: 120px;
+}
+.bord {
+  background-color: #f5bd41;
+  width: 100px;
+  height: 4px;
+  /*padding-top: 20px;*/
+  display: flex;
+  margin: 0 auto;
+}
+.imag {
+  align-items: center;
+  display: flex;
+
+}
+.sup-port {
+    padding-top: 108px;
+    padding-left: 214px;
+}
+.com-direct {
+  padding-top: 112px;
+  padding-left: 231px;
+}
+.book-online {
+  padding-top: 120px;
+  padding-left: 221px;
+}
+.real-review {
+  padding-top: 108px;
+  padding-left: 216px;
+}
+
+.supPort {
+  padding-top: 52px;
+padding-left: 210px;
+}
+.comMun{
+    padding-top: 56px;
+  align-items: center;
+    padding-left: 210px;
+}
+.bokOnli{
+    padding-top: 64px;
+    padding-left: 210px;
+}
+.relQuest{
+    padding-top: 60px;
+    padding-left: 210px;
+}
