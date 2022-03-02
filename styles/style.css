@@ -1,0 +1,52 @@
+.heder {
+  font-size: 40px;
+  text-align: center;
+  padding-top: 120px;
+}
+.bord {
+  background-color: #f5bd41;
+  width: 100px;
+  height: 4px;
+  /*padding-top: 20px;*/
+  display: flex;
+  margin: 0 auto;
+}
+.imag {
+  align-items: center;
+  display: flex;
+
+}
+.Sup {
+    padding-top: 108px;
+    padding-left: 214px;
+}
+.Com {
+  padding-top: 112px;
+  padding-left: 231px;
+}
+.book {
+  padding-top: 120px;
+  padding-left: 221px;
+}
+.real {
+  padding-top: 108px;
+  padding-left: 216px;
+}
+
+.sup {
+  padding-top: 52px;
+padding-left: 210px;
+}
+.com{
+    padding-top: 56px;
+  align-items: center;
+    padding-left: 210px;
+}
+.bok{
+    padding-top: 64px;
+    padding-left: 210px;
+}
+.rel{
+    padding-top: 60px;
+    padding-left: 210px;
+}
