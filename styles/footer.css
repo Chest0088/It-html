@@ -1,0 +1,39 @@
+@import "font-face.css";
+
+body {
+  display: flex;
+  background-color: #10367c;
+  justify-content: space-around;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.table {
+  margin-top: 120px;
+  list-style-type: none;
+  justify-content: space-around;
+}
+
+li {
+  font-family: serif;
+  font-weight: 400;
+  margin: 24px;
+  color: #ffffff;
+}
+
+.heading {
+  font-family: serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.end {
+  color: #ffffff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 250px;
+}
