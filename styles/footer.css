@@ -1,8 +1,14 @@
-@import "font-face.css";
+@import "/styles/font.css";
 
-body {
-  display: flex;
+
+
+.body {
   background-color: #10367c;
+  padding: 0;
+}
+
+.body-end {
+  display: flex;
   justify-content: space-around;
 }
 
@@ -18,14 +24,14 @@ body {
 }
 
 li {
-  font-family: serif;
+  font-family: "roboto", serif;
   font-weight: 400;
   margin: 24px;
   color: #ffffff;
 }
 
 .heading {
-  font-family: serif;
+  font-family: "roboto", serif;
   font-weight: 500;
   font-size: 20px;
 }
@@ -33,7 +39,9 @@ li {
 .end {
   color: #ffffff;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  margin-top: 250px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 120px;
+  margin-left: 140px;
+
 }
