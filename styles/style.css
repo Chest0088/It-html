@@ -1,7 +1,7 @@
 @import "fonts/Roboto";
 
-body {
-  min-width: 600px;
+* {
+  margin: 0;
 }
 
 h2 {
@@ -12,15 +12,13 @@ h2 {
   font-size: 40px;
   font-family: "Roboto", serif;
   font-weight: 500;
+  margin-top: 0;
 }
 
 .bord {
   background-color: #f5bd41;
   width: 100px;
   height: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin: auto;
 }
 
@@ -37,25 +35,30 @@ h2 {
   margin: auto;
 }
 
-.text {
-  font-weight: 400;
-  display: flex;
-  font-size: 24px;
-  font-family: "Roboto", serif;
-}
-
 .support {
   padding-top: 48px;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-size: 24px;
 }
 
 .com-direct {
   padding-top: 56px;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-size: 24px;
 }
 
 .book-onli {
   padding-top: 75px;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-size: 24px;
 }
 
 .real-guest {
   padding-top: 60px;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-size: 24px;
 }

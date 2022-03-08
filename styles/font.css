@@ -1,19 +1,13 @@
 @font-face {
-  font-family: "Roboto",serif;
-  src: url("../fonts/roboto/roboto-500.woff2");
-  ("format woff2");
+  font-family: "Roboto", serif;
+  src: url("../fonts/Roboto/Roboto-500.woff2") format("woff2");
   font-style: normal;
   font-weight: 500;
 }
 
 @font-face {
-  font-family: "Roboto",serif;
-  src: url("../fonts/roboto/roboto-400.woff2");
-("format woff2");
+  font-family: "Roboto", serif;
+  src: url("../fonts/Roboto/Roboto-400.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
 }
-
-
-
-
