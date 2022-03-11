@@ -1,4 +1,4 @@
-@import "fonts/Roboto";
+@import "./styles/font.css";
 
 * {
   margin: 0;
@@ -20,12 +20,14 @@ h2 {
   width: 100px;
   height: 4px;
   margin: auto;
+  margin-top: 20px;
 }
 
 .img {
   display: flex;
   justify-content: space-around;
   padding-top: 80px;
+  padding-bottom: 122px;
 }
 
 .content {
