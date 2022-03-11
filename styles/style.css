@@ -1,4 +1,4 @@
-@import "./styles/font.css";
+@import "./font.css";
 
 * {
   margin: 0;
@@ -19,8 +19,7 @@ h2 {
   background-color: #f5bd41;
   width: 100px;
   height: 4px;
-  margin: auto;
-  margin-top: 20px;
+  margin: 20px auto auto;
 }
 
 .img {

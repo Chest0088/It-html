@@ -1,4 +1,4 @@
-@import "./styles/font.css";
+@import "./font.css";
 
 .footer {
   background-color: #10367c;
@@ -16,7 +16,6 @@
   margin-left: 104px;
   margin-right: 112px;
   list-style-type: none;
-
 }
 
 li {
@@ -28,7 +27,6 @@ li {
 .heading {
   font-family: "Roboto", serif;
   font-weight: 500;
-  /*font-size: 20px;*/
 }
 
 .end {
@@ -41,7 +39,7 @@ li {
   margin-top: 64px;
 }
 
-a{
+a {
   color: #ffffff;
   text-decoration: none;
 }
