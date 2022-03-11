@@ -1,52 +1,65 @@
-.heder {
-  font-size: 40px;
-  text-align: center;
-  padding-top: 120px;
+@import "./font.css";
+
+* {
+  margin: 0;
 }
+
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 120px;
+  font-size: 40px;
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  margin-top: 0;
+}
+
 .bord {
   background-color: #f5bd41;
   width: 100px;
   height: 4px;
-  /*padding-top: 20px;*/
-  display: flex;
-  margin: 0 auto;
+  margin: 20px auto auto;
 }
-.imag {
-  align-items: center;
-  display: flex;
 
+.img {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 80px;
+  padding-bottom: 122px;
 }
-.sup-port {
-    padding-top: 108px;
-    padding-left: 214px;
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
 }
+
+.support {
+  padding-top: 48px;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+
 .com-direct {
-  padding-top: 112px;
-  padding-left: 231px;
-}
-.book-online {
-  padding-top: 120px;
-  padding-left: 221px;
-}
-.real-review {
-  padding-top: 108px;
-  padding-left: 216px;
+  padding-top: 56px;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-size: 24px;
 }
 
-.supPort {
-  padding-top: 52px;
-padding-left: 210px;
+.book-onli {
+  padding-top: 75px;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-size: 24px;
 }
-.comMun{
-    padding-top: 56px;
-  align-items: center;
-    padding-left: 210px;
-}
-.bokOnli{
-    padding-top: 64px;
-    padding-left: 210px;
-}
-.relQuest{
-    padding-top: 60px;
-    padding-left: 210px;
+
+.real-guest {
+  padding-top: 60px;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-size: 24px;
 }

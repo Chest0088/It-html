@@ -1,0 +1,45 @@
+@import "./font.css";
+
+.footer {
+  background-color: #10367c;
+  padding: 0;
+  margin: 0;
+}
+
+.body-end {
+  display: flex;
+}
+
+.table {
+  padding-left: 0;
+  padding-top: 120px;
+  margin-left: 104px;
+  margin-right: 112px;
+  list-style-type: none;
+}
+
+li {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  margin: 24px;
+}
+
+.heading {
+  font-family: "Roboto", serif;
+  font-weight: 500;
+}
+
+.end {
+  color: #ffffff;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-bottom: 120px;
+  margin-left: 103px;
+  margin-top: 64px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
