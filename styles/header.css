@@ -5,11 +5,22 @@
   padding: 0;
 }
 
+input {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-size: 18px;
+  border: none;
+  padding: 0;
+  outline: #f5bd41;
+  border-radius: 8px;
+}
+
 .main {
   background-image: url("../images/castelmezzano.png");
   background-position: center;
+background-repeat: no-repeat;
   min-height: 900px;
-  min-width: 1440px;
+  min-width: 100%;
   background-size: 100%;
 }
 
@@ -49,14 +60,7 @@ a:hover {
 
 .item:hover::before {
   width: 50px;
-  height: 1px;
-  text-align: center;
-  background-color: #f5bd41;
-}
-
-.icon:hover::before {
-  width: 30px;
-  height: 1px;
+  height: 4px;
   text-align: center;
   background-color: #f5bd41;
 }
@@ -76,16 +80,12 @@ svg:hover > path {
   fill: #f5bd41;
 }
 
-h3 {
+h1 {
   font-family: Roboto, serif;
   font-weight: 500;
   font-size: 50px;
   color: #ffffff;
   padding-left: 104px;
-
-}
-
-.discover {
   padding-top: 202px;
 }
 
@@ -101,58 +101,42 @@ label {
 }
 
 label:first-child {
-  padding-right: 230px;
+  padding-right: 120px;
 }
 
 form {
   padding-left: 104px;
+  height: 64px;
+  padding-right: 104px;
 }
 
-#date:focus {
+input:focus {
   border: 3px #f5bd41 solid;
 }
 
-input {
-  border: none;
-}
-
 #city {
-  font-family: "Roboto", serif;
-  font-weight: 400;
-  font-size: 18px;
-  width: 467px;
+  width: 339px;
   height: 64px;
   padding-left: 24px;
-  border-radius: 8px;
   display: inline-block;
-  margin: -12px;
 }
 
 #date {
-  font-family: "Roboto", serif;
-  font-weight: 400;
-  font-size: 18px;
   width: 259px;
   height: 64px;
-  border-radius: 8px;
   padding-left: 24px;
-  margin: -14px;
   position: relative;
   outline: #f5bd41;
 }
 
 #children {
-  font-family: "Roboto", serif;
-  font-weight: 400;
-  font-size: 18px;
-  width: 305px;
+  width: 285px;
   height: 64px;
-  border-radius: 8px;
   padding-left: 24px;
 }
 
 .search {
-  width: 192px;
+  width: 186px;
   height: 64px;
   font-family: "Roboto", serif;
   font-weight: 500;
@@ -161,7 +145,6 @@ input {
   border-radius: 8px;
   background-color: #3077c6;
   border: none;
-  margin: -12px;
 }
 
 .foot {
@@ -169,11 +152,20 @@ input {
   justify-content: center;
   padding-top: 120px;
 }
-.googl {
+
+.google {
   margin-right: -8px;
   padding-left: 0;
 }
 
-.appl {
+.apple {
   padding-left: 0;
+}
+
+.container{
+  display: flex;
+  background: white;
+  border-radius: 8px;
+  margin: 0 auto;
+  height: 64px;
 }
