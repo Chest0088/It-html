@@ -5,7 +5,7 @@
   padding: 0;
 }
 
-.block1 {
+.main {
   background-image: url("../images/castelmezzano.png");
   background-position: center;
   min-height: 900px;
@@ -23,37 +23,73 @@
   justify-content: space-between;
 }
 
+.links {
+  display: flex;
+  align-items: center;
+}
+
 a {
   color: #ffffff;
   text-decoration: none;
   justify-content: end;
-  padding-left: 24px;
+  margin-left: 24px;
+}
+
+a:hover {
+  color: #f5bd41;
 }
 
 .attraction {
-  padding-right: 24px;
+  margin-right: 24px;
 }
 
-.line {
-  height: 2px;
+.item {
+  position: relative;
+}
+
+.item:hover::before {
   width: 50px;
+  height: 1px;
+  text-align: center;
   background-color: #f5bd41;
-  margin-left: 992px;
-  margin-top: 12px;
 }
 
-p {
+.icon:hover::before {
+  width: 30px;
+  height: 1px;
+  text-align: center;
+  background-color: #f5bd41;
+}
+
+.item::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 1px;
+  bottom: -12px;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+svg:hover > path {
+  fill: #f5bd41;
+}
+
+h3 {
   font-family: Roboto, serif;
   font-weight: 500;
   font-size: 50px;
   color: #ffffff;
   padding-left: 104px;
+
 }
+
 .discover {
   padding-top: 202px;
 }
 
-span {
+label {
   color: #ffffff;
   font-family: "Roboto", serif;
   font-weight: 400;
@@ -64,7 +100,7 @@ span {
   padding: 100px 221px 24px 120px;
 }
 
-.name {
+label:first-child {
   padding-right: 230px;
 }
 
@@ -72,9 +108,12 @@ form {
   padding-left: 104px;
 }
 
+#date:focus {
+  border: 3px #f5bd41 solid;
+}
+
 input {
-  border: 0;
-  margin: -8px;
+  border: none;
 }
 
 #city {
@@ -86,6 +125,7 @@ input {
   padding-left: 24px;
   border-radius: 8px;
   display: inline-block;
+  margin: -12px;
 }
 
 #date {
@@ -96,6 +136,9 @@ input {
   height: 64px;
   border-radius: 8px;
   padding-left: 24px;
+  margin: -14px;
+  position: relative;
+  outline: #f5bd41;
 }
 
 #children {
@@ -125,4 +168,12 @@ input {
   display: flex;
   justify-content: center;
   padding-top: 120px;
+}
+.googl {
+  margin-right: -8px;
+  padding-left: 0;
+}
+
+.appl {
+  padding-left: 0;
 }
