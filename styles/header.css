@@ -13,21 +13,26 @@ input {
   padding: 0;
   outline: #f5bd41;
   border-radius: 8px;
+  box-sizing: border-box;
 }
 
 .main {
   background-image: url("../images/castelmezzano.png");
   background-position: center;
-background-repeat: no-repeat;
+  background-repeat: no-repeat;
   min-height: 900px;
   min-width: 100%;
   background-size: 100%;
 }
 
+.container {
+  padding: 51px 104px 0;
+  overflow: hidden;
+}
+
 .head {
   height: 46px;
   display: flex;
-  padding: 51px 104px 0;
   font-family: "Roboto", serif;
   font-weight: 400;
   font-size: 24px;
@@ -85,7 +90,6 @@ h1 {
   font-weight: 500;
   font-size: 50px;
   color: #ffffff;
-  padding-left: 104px;
   padding-top: 202px;
 }
 
@@ -97,17 +101,11 @@ label {
 }
 
 .hotel {
-  padding: 100px 221px 24px 120px;
+  padding: 100px 221px 24px 24px;
 }
 
 label:first-child {
-  padding-right: 120px;
-}
-
-form {
-  padding-left: 104px;
-  height: 64px;
-  padding-right: 104px;
+  padding-right: 180px;
 }
 
 input:focus {
@@ -115,7 +113,7 @@ input:focus {
 }
 
 #city {
-  width: 339px;
+  width: 467px;
   height: 64px;
   padding-left: 24px;
   display: inline-block;
@@ -130,13 +128,13 @@ input:focus {
 }
 
 #children {
-  width: 285px;
+  width: 314px;
   height: 64px;
   padding-left: 24px;
 }
 
 .search {
-  width: 186px;
+  width: 192px;
   height: 64px;
   font-family: "Roboto", serif;
   font-weight: 500;
@@ -162,10 +160,8 @@ input:focus {
   padding-left: 0;
 }
 
-.container{
+form {
   display: flex;
   background: white;
   border-radius: 8px;
-  margin: 0 auto;
-  height: 64px;
 }
