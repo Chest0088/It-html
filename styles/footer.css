@@ -6,6 +6,10 @@
   margin: 0;
 }
 
+.vector {
+  display: none;
+}
+
 .body-end {
   display: flex;
 }
@@ -32,8 +36,6 @@ li {
 .end {
   color: #ffffff;
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
   padding-bottom: 120px;
   margin-left: 103px;
   margin-top: 64px;
@@ -42,4 +44,42 @@ li {
 a {
   color: #ffffff;
   text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .table {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: none;
+  }
+
+  .body-end {
+    display: flex;
+    justify-content: center;
+  }
+
+  .heading {
+    display: flex;
+    margin: 0 auto;
+    font-size: 15px;
+    padding: 40px 16px 0 0;
+    text-decoration: underline;
+  }
+
+  .vector {
+    display: flex;
+    width: 98px;
+    height: 19px;
+    margin: 0 auto;
+    padding-top: 40px;
+  }
+
+  .end {
+    margin: 0;
+    padding: 32px 0 40px;
+    justify-content: center;
+  }
 }

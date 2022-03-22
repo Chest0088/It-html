@@ -22,7 +22,7 @@ input {
   background-repeat: no-repeat;
   min-height: 900px;
   min-width: 100%;
-  background-size: 100%;
+  background-size: 100% 100%;
 }
 
 .container {
@@ -93,6 +93,10 @@ h1 {
   padding-top: 202px;
 }
 
+.menu {
+  display: none;
+}
+
 label {
   color: #ffffff;
   font-family: "Roboto", serif;
@@ -125,6 +129,10 @@ input:focus {
   padding-left: 24px;
   position: relative;
   outline: #f5bd41;
+}
+
+.check-in-date {
+  display: none;
 }
 
 #children {
@@ -164,4 +172,128 @@ form {
   display: flex;
   background: white;
   border-radius: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    margin: 0;
+    background-size: cover;
+    max-width: 100%;
+    max-height: 533px;
+  }
+
+  .container {
+    margin: 0 auto;
+    width: 328px;
+    padding: 16px;
+  }
+
+  h1 {
+    font-size: 30px;
+    padding-top: 52px;
+    padding-bottom: 31px;
+  }
+
+  label {
+    display: none;
+  }
+
+  input {
+    font-size: 18px;
+    height: 48px;
+    border-radius: 4px;
+  }
+
+  .item {
+    display: none;
+  }
+
+  .head {
+  }
+
+  .logo {
+    width: 122px;
+    height: 24px;
+    padding-top: 12px;
+  }
+
+  .night {
+    width: 16px;
+    height: 16px;
+  }
+
+  .account {
+    width: 24px;
+    height: 24px;
+  }
+
+  form {
+    display: block;
+    box-sizing: border-box;
+    border: 8px solid #f5bd41;
+    border-radius: 0;
+    outline: #f5bd41;
+    justify-content: center;
+    background-color: #f5bd41;
+  }
+
+  .hotel {
+    padding: 0;
+  }
+
+  #city {
+    height: 48px;
+    width: 312px;
+    margin-top: 8px;
+  }
+
+  #date {
+    height: 48px;
+    width: 152px;
+    margin-top: 8px;
+    /*padding: 0;*/
+  }
+
+  .check-in-date {
+    display: inline;
+    width: 152px;
+    margin-left: 4px;
+  }
+
+  #children {
+    height: 48px;
+    width: 312px;
+    margin-top: 8px;
+  }
+
+  .menu {
+    display: flex;
+    width: 24px;
+    height: 16px;
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 0;
+  }
+
+  .search {
+    width: 312px;
+    margin-top: 8px;
+    border-radius: 4px;
+  }
+
+  .apple {
+    width: 135px;
+    height: 40px;
+    padding-top: 32px;
+  }
+
+  .google {
+    width: 135px;
+    height: 40px;
+    padding-top: 32px;
+  }
 }
