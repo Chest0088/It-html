@@ -30,6 +30,11 @@ input {
   overflow: hidden;
 }
 
+.logo{
+width: 205px;
+  height: 40px;
+}
+
 .head {
   height: 46px;
   display: flex;
@@ -41,7 +46,7 @@ input {
 
 .links {
   display: flex;
-  align-items: center;
+  /*align-items: center;*/
 }
 
 a {
@@ -49,6 +54,10 @@ a {
   text-decoration: none;
   justify-content: end;
   margin-left: 24px;
+}
+
+#night:hover {
+  color: #f5bd41;
 }
 
 a:hover {
@@ -156,6 +165,7 @@ input:focus {
 .foot {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding-top: 120px;
 }
 
