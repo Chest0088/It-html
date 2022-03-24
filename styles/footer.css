@@ -1,6 +1,7 @@
 @import "./font.css";
 
 .footer {
+  font-family: "Roboto", serif;
   background-color: #10367c;
   padding: 0;
   margin: 0;
@@ -23,13 +24,11 @@
 }
 
 li {
-  font-family: "Roboto", serif;
   font-weight: 400;
   margin: 24px;
 }
 
 .heading {
-  font-family: "Roboto", serif;
   font-weight: 500;
 }
 
@@ -47,6 +46,23 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+  li {
+    font-size: 12px;
+  }
+
+  .table {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .end {
+    font-size: 12px;
+    margin-left: 0;
+    padding-left: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
   .table {
     margin: 0;
     padding: 0;

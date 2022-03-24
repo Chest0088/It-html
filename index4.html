@@ -67,8 +67,8 @@
           <label for="date">Check-in — Check-out</label>
         </div>
         <form action="#" method="GET">
-          <input id="city" type="text" name="city" placeholder="New York" />
-          <input
+          <input class="city" id="city" type="text" name="city" placeholder="New York" />
+          <input class="date"
             id="date"
             type="date"
             placeholder="Tue 15 Sept — Sat 19 Sept"
@@ -78,7 +78,7 @@
             type="date"
             placeholder="Tue 15 Sept — Sat 19 Sept"
           />
-          <input
+          <input class="children"
             id="children"
             type="text"
             placeholder="2 Adults — 0 Children — 1 Room"
@@ -100,6 +100,7 @@
       <h2>What do we offer</h2>
       <div class="bord"></div>
       <div class="img">
+        <div class="media">
         <div class="col-3">
           <svg>
             <use xlink:href="sprite.svg#support"></use>
@@ -110,6 +111,8 @@
             <use xlink:href="sprite.svg#communicate"></use>
           </svg>
         </div>
+        </div>
+        <div class="bookReal">
         <div class="col-3">
           <svg>
             <use xlink:href="sprite.svg#booking"></use>
@@ -119,6 +122,7 @@
           <svg>
             <use xlink:href="sprite.svg#reviews"></use>
           </svg>
+        </div>
         </div>
       </div>
     </section>

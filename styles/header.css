@@ -30,8 +30,8 @@ input {
   overflow: hidden;
 }
 
-.logo{
-width: 205px;
+.logo {
+  width: 205px;
   height: 40px;
 }
 
@@ -46,18 +46,20 @@ width: 205px;
 
 .links {
   display: flex;
-  /*align-items: center;*/
 }
 
 a {
   color: #ffffff;
   text-decoration: none;
-  justify-content: end;
+}
+
+.night {
+  padding-top: 5px;
   margin-left: 24px;
 }
 
-#night:hover {
-  color: #f5bd41;
+.account {
+  margin-left: 24px;
 }
 
 a:hover {
@@ -66,10 +68,13 @@ a:hover {
 
 .attraction {
   margin-right: 24px;
+  padding-top: 6px;
+  margin-left: 24px;
 }
 
 .item {
   position: relative;
+  padding-top: 6px;
 }
 
 .item:hover::before {
@@ -125,14 +130,14 @@ input:focus {
   border: 3px #f5bd41 solid;
 }
 
-#city {
+.city {
   width: 467px;
   height: 64px;
   padding-left: 24px;
   display: inline-block;
 }
 
-#date {
+.date {
   width: 259px;
   height: 64px;
   padding-left: 24px;
@@ -144,7 +149,7 @@ input:focus {
   display: none;
 }
 
-#children {
+.children {
   width: 314px;
   height: 64px;
   padding-left: 24px;
@@ -176,6 +181,7 @@ input:focus {
 
 .apple {
   padding-left: 0;
+  margin-left: 16px;
 }
 
 form {
@@ -185,6 +191,98 @@ form {
 }
 
 @media screen and (max-width: 768px) {
+  form {
+    display: block;
+    box-sizing: border-box;
+    border: 4px solid #7ec630;
+    outline: #f5bd41;
+    justify-content: center;
+    border-radius: 0;
+    background-color: #f5bd41;
+    width: 358px;
+  }
+
+  .date {
+    border-radius: 0;
+    width: 350px;
+  }
+
+  .city {
+    border-radius: 0;
+    width: 350px;
+  }
+
+  .children {
+    border-radius: 0;
+    width: 350px;
+  }
+
+  .search {
+    border-radius: 0;
+    width: 350px;
+  }
+
+  label {
+    display: none;
+  }
+
+  .hotel {
+    padding-top: 30px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+  .logo {
+    width: 150px;
+  }
+
+  .night {
+    padding-top: 12px;
+    width: 25px;
+    height: 25px;
+  }
+
+  .account {
+    width: 30px;
+    height: 30px;
+    padding-top: 8px;
+  }
+
+  .container {
+    width: 358px;
+    margin: 0 auto;
+  }
+
+  .item {
+    display: none;
+  }
+
+  . head {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .foot {
+    padding-top: 60px;
+  }
+
+  .logo {
+    padding-top: 6px;
+    display: flex;
+    justify-content: start;
+  }
+
+  .menu {
+    display: flex;
+    width: 24px;
+    height: 16px;
+    margin-left: 16px;
+    padding-top: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
   .main {
     margin: 0;
     background-size: cover;
@@ -218,9 +316,6 @@ form {
     display: none;
   }
 
-  .head {
-  }
-
   .logo {
     width: 122px;
     height: 24px;
@@ -235,6 +330,7 @@ form {
   .account {
     width: 24px;
     height: 24px;
+    padding-top: 6px;
   }
 
   form {
@@ -245,19 +341,20 @@ form {
     outline: #f5bd41;
     justify-content: center;
     background-color: #f5bd41;
+    width: 328px;
   }
 
   .hotel {
     padding: 0;
   }
 
-  #city {
+  .city {
     height: 48px;
     width: 312px;
     margin-top: 8px;
   }
 
-  #date {
+  .date {
     height: 48px;
     width: 152px;
     margin-top: 8px;
@@ -270,7 +367,7 @@ form {
     margin-left: 4px;
   }
 
-  #children {
+  .children {
     height: 48px;
     width: 312px;
     margin-top: 8px;
@@ -280,6 +377,8 @@ form {
     display: flex;
     width: 24px;
     height: 16px;
+    margin-left: 16px;
+    padding-top: 4px;
   }
 
   .links {
