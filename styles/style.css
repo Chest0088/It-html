@@ -28,6 +28,7 @@ h2 {
   padding-top: 80px;
   padding-bottom: 122px;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .content {
@@ -37,45 +38,14 @@ h2 {
   margin: auto;
 }
 
-.support {
-  padding-top: 48px;
-  font-weight: 400;
-  font-size: 24px;
-  display: flex;
-  justify-content: center;
-}
 
-.com-direct {
-  padding-top: 56px;
-  font-weight: 400;
-  font-size: 24px;
-  display: flex;
-  justify-content: center;
-}
+/*.media {*/
+/*  display: flex;*/
+/*}*/
 
-.book-online {
-  padding-top: 75px;
-  font-weight: 400;
-  font-size: 24px;
-  display: flex;
-  justify-content: center;
-}
-
-.real-guest {
-  padding-top: 60px;
-  font-weight: 400;
-  font-size: 24px;
-  display: flex;
-  justify-content: center;
-}
-
-.media {
-  display: flex;
-}
-
-.bookReal {
-  display: flex;
-}
+/*.bookReal {*/
+/*  display: flex;*/
+/*}*/
 
 /*@media screen and (min-width: 768px) {*/
 /*  .col-1 {*/
@@ -86,10 +56,10 @@ h2 {
 /*    flex: 2;*/
 /*  }*/
 
-/*  .col-3 {*/
-/*    flex: 3;*/
-/*    display: inline;*/
-/*  }*/
+  /*.col-3 {*/
+  /*  flex: 3;*/
+  /*  display: inline;*/
+  /*}*/
 
 /*  .col-4 {*/
 /*    flex: 4;*/
@@ -136,7 +106,6 @@ h2 {
   }
 
   .img {
-    /*display: block;*/
     margin: 0 auto;
   }
 
@@ -149,10 +118,9 @@ h2 {
   }
 
   .col-3 {
-    width: 300px;
     margin-right: 0;
     box-sizing: border-box;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
   }
 }
 @media screen and (max-width: 480px) {
