@@ -22,12 +22,17 @@ input {
   background-repeat: no-repeat;
   min-height: 900px;
   min-width: 100%;
-  background-size: 100%;
+  background-size: 100% 100%;
 }
 
 .container {
   padding: 51px 104px 0;
   overflow: hidden;
+}
+
+.logo {
+  width: 205px;
+  height: 40px;
 }
 
 .head {
@@ -41,13 +46,19 @@ input {
 
 .links {
   display: flex;
-  align-items: center;
 }
 
 a {
   color: #ffffff;
   text-decoration: none;
-  justify-content: end;
+}
+
+.night {
+  padding-top: 5px;
+  margin-left: 24px;
+}
+
+.account {
   margin-left: 24px;
 }
 
@@ -57,10 +68,13 @@ a:hover {
 
 .attraction {
   margin-right: 24px;
+  padding-top: 6px;
+  margin-left: 24px;
 }
 
 .item {
   position: relative;
+  padding-top: 6px;
 }
 
 .item:hover::before {
@@ -93,6 +107,10 @@ h1 {
   padding-top: 202px;
 }
 
+.menu {
+  display: none;
+}
+
 label {
   color: #ffffff;
   font-family: "Roboto", serif;
@@ -112,14 +130,14 @@ input:focus {
   border: 3px #f5bd41 solid;
 }
 
-#city {
+.city {
   width: 467px;
   height: 64px;
   padding-left: 24px;
   display: inline-block;
 }
 
-#date {
+.date {
   width: 259px;
   height: 64px;
   padding-left: 24px;
@@ -127,7 +145,11 @@ input:focus {
   outline: #f5bd41;
 }
 
-#children {
+.check-in-date {
+  display: none;
+}
+
+.children {
   width: 314px;
   height: 64px;
   padding-left: 24px;
@@ -148,6 +170,7 @@ input:focus {
 .foot {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding-top: 120px;
 }
 
@@ -158,10 +181,228 @@ input:focus {
 
 .apple {
   padding-left: 0;
+  margin-left: 16px;
 }
 
 form {
   display: flex;
   background: white;
   border-radius: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  form {
+    display: block;
+    box-sizing: border-box;
+    border: 4px solid #7ec630;
+    outline: #f5bd41;
+    justify-content: center;
+    border-radius: 0;
+    background-color: #f5bd41;
+    width: 358px;
+  }
+
+  .date {
+    border-radius: 0;
+    width: 350px;
+  }
+
+  .city {
+    border-radius: 0;
+    width: 350px;
+  }
+
+  .children {
+    border-radius: 0;
+    width: 350px;
+  }
+
+  .search {
+    border-radius: 0;
+    width: 350px;
+  }
+
+  label {
+    display: none;
+  }
+
+  .hotel {
+    padding-top: 30px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+  .logo {
+    width: 150px;
+  }
+
+  .night {
+    padding-top: 12px;
+    width: 25px;
+    height: 25px;
+  }
+
+  .account {
+    width: 30px;
+    height: 30px;
+    padding-top: 8px;
+  }
+
+  .container {
+    width: 358px;
+    margin: 0 auto;
+  }
+
+  .item {
+    display: none;
+  }
+
+  . head {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .foot {
+    padding-top: 60px;
+  }
+
+  .logo {
+    padding-top: 6px;
+    display: flex;
+    justify-content: start;
+  }
+
+  .menu {
+    display: flex;
+    width: 24px;
+    height: 16px;
+    margin-left: 16px;
+    padding-top: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main {
+    margin: 0;
+    background-size: cover;
+    max-width: 100%;
+    max-height: 533px;
+  }
+
+  .container {
+    margin: 0 auto;
+    width: 328px;
+    padding: 16px;
+  }
+
+  h1 {
+    font-size: 30px;
+    padding-top: 52px;
+    padding-bottom: 31px;
+  }
+
+  label {
+    display: none;
+  }
+
+  input {
+    font-size: 18px;
+    height: 48px;
+    border-radius: 4px;
+  }
+
+  .item {
+    display: none;
+  }
+
+  .logo {
+    width: 122px;
+    height: 24px;
+    padding-top: 12px;
+  }
+
+  .night {
+    width: 16px;
+    height: 16px;
+  }
+
+  .account {
+    width: 24px;
+    height: 24px;
+    padding-top: 6px;
+  }
+
+  form {
+    display: block;
+    box-sizing: border-box;
+    border: 8px solid #f5bd41;
+    border-radius: 0;
+    outline: #f5bd41;
+    justify-content: center;
+    background-color: #f5bd41;
+    width: 328px;
+  }
+
+  .hotel {
+    padding: 0;
+  }
+
+  .city {
+    height: 48px;
+    width: 312px;
+    margin-top: 8px;
+  }
+
+  .date {
+    height: 48px;
+    width: 152px;
+    margin-top: 8px;
+    /*padding: 0;*/
+  }
+
+  .check-in-date {
+    display: inline;
+    width: 152px;
+    margin-left: 4px;
+  }
+
+  .children {
+    height: 48px;
+    width: 312px;
+    margin-top: 8px;
+  }
+
+  .menu {
+    display: flex;
+    width: 24px;
+    height: 16px;
+    margin-left: 16px;
+    padding-top: 4px;
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 0;
+  }
+
+  .search {
+    width: 312px;
+    margin-top: 8px;
+    border-radius: 4px;
+  }
+
+  .apple {
+    width: 135px;
+    height: 40px;
+    padding-top: 32px;
+  }
+
+  .google {
+    width: 135px;
+    height: 40px;
+    padding-top: 32px;
+  }
 }
