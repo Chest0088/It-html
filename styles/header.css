@@ -28,6 +28,7 @@ input {
 .container {
   padding: 51px 104px 0;
   overflow: hidden;
+  height: 100%;
 }
 
 .logo {
