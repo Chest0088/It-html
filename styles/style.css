@@ -27,22 +27,15 @@ h2 {
 
 .picture{
   padding-bottom: 20px;
-  /*width: calc(100% / 12 * 4 - 90px);*/
 }
 
 .col-3{
   width: 25%;
 }
 
-/*.container-row {*/
-/*  max-width: 1260px;*/
-/*  display: flex;*/
-/*  height: 100%;*/
-/*  flex-wrap: wrap;*/
-/*  padding-top: 120px;*/
-/*  padding-bottom: 122px;*/
-/*  margin: 0 auto;*/
-/*}*/
+.container-section{
+  padding-right: 30px;
+}
 
 .img {
   display: flex;
@@ -60,59 +53,15 @@ h2 {
   margin: auto;
 }
 
-/*.col-1 {*/
-/*  flex: 1;*/
-/*}*/
-
-/*.col-2 {*/
-/*  flex: 2;*/
-/*}*/
-
-/*.col-3 {*/
-/*  flex: 3;*/
-/*}*/
-
-/*.col-4 {*/
-/*  flex: 4;*/
-/*}*/
-
-/*.col-5 {*/
-/*  flex: 5;*/
-/*}*/
-
-/*.col-6 {*/
-/*  flex: 6;*/
-/*}*/
-
-/*.col-7 {*/
-/*  flex: 7;*/
-/*}*/
-
-/*.col-8 {*/
-/*  flex: 8;*/
-/*}*/
-
-/*.col-9 {*/
-/*  flex: 9;*/
-/*}*/
-
-/*.col-10 {*/
-/*  flex: 10;*/
-/*}*/
-
-/*.col-11 {*/
-/*  flex: 11;*/
-/*}*/
-
-/*.col-12 {*/
-/*  flex: 12;*/
-/*}*/
-
 @media screen and (max-width: 850px) {
 
   h2 {
     padding-top: 20px;
     font-size: 30px;
+  }
+
+  .container-section{
+padding: 0;
   }
 
   .img {
@@ -140,6 +89,10 @@ h2 {
     font-size: 15px;
     text-align: center;
     display: inline;
+  }
+
+  .container-section{
+    padding: 0;
   }
 
   h2 {
