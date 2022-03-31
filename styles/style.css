@@ -130,7 +130,7 @@ h2 {
 }
 @media screen and (max-width: 480px) {
 
-  .col-s-12{
+  .col-s-6 {
     width: 100%;
   }
 
