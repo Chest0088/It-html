@@ -5,14 +5,17 @@
   font-family: "Roboto", serif;
 }
 
+section{
+  width: 100%;
+}
+
 h2 {
-  display: flex;
-  justify-content: center;
   align-items: center;
   padding-top: 120px;
   font-size: 40px;
   font-weight: 500;
-  margin-top: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .bord {
@@ -22,13 +25,25 @@ h2 {
   margin: 20px auto auto;
 }
 
+.picture{
+  padding-bottom: 20px;
+}
+
+.col-3{
+  width: 25%;
+}
+
+.container-section{
+  padding-right: 30px;
+}
+
 .img {
   display: flex;
   justify-content: space-around;
   padding-top: 80px;
-  padding-bottom: 122px;
   width: 100%;
   flex-wrap: wrap;
+  padding-bottom: 122px;
 }
 
 .content {
@@ -38,96 +53,46 @@ h2 {
   margin: auto;
 }
 
+@media screen and (max-width: 850px) {
 
-/*.media {*/
-/*  display: flex;*/
-/*}*/
-
-/*.bookReal {*/
-/*  display: flex;*/
-/*}*/
-
-/*@media screen and (min-width: 768px) {*/
-/*  .col-1 {*/
-/*    flex: 1;*/
-/*  }*/
-
-/*  .col-2 {*/
-/*    flex: 2;*/
-/*  }*/
-
-  /*.col-3 {*/
-  /*  flex: 3;*/
-  /*  display: inline;*/
-  /*}*/
-
-/*  .col-4 {*/
-/*    flex: 4;*/
-/*  }*/
-
-/*  .col-5 {*/
-/*    flex: 5;*/
-/*  }*/
-
-/*  .col-6 {*/
-/*    flex: 6;*/
-/*  }*/
-
-/*  .col-7 {*/
-/*    flex: 7;*/
-/*  }*/
-
-/*  .col-8 {*/
-/*    flex: 8;*/
-/*  }*/
-
-/*  .col-9 {*/
-/*    flex: 9;*/
-/*  }*/
-
-/*  .col-10 {*/
-/*    flex: 10;*/
-/*  }*/
-
-/*  .col-11 {*/
-/*    flex: 11;*/
-/*  }*/
-
-/*  .col-12 {*/
-/*    flex: 12;*/
-/*  }*/
-
-/*}*/
-
-@media screen and (max-width: 768px) {
   h2 {
     padding-top: 20px;
     font-size: 30px;
+  }
+
+  .container-section{
+padding: 0;
   }
 
   .img {
     margin: 0 auto;
   }
 
-  .media {
-    display: inline-block;
-  }
+.picture{
+  padding-bottom: 20px;
 
-  .bookReal {
-    display: inline-block;
-  }
+}
+.col-m-6{
+  width: 50%;
+}
 
-  .col-3 {
-    margin-right: 0;
-    box-sizing: border-box;
-    padding-bottom: 30px;
-  }
 }
 @media screen and (max-width: 480px) {
+
+  .col-s-6 {
+    width: 100%;
+  }
+
   .img {
+    padding-top: 32px;
+    padding-bottom: 40px;
     font-size: 15px;
     text-align: center;
     display: inline;
+  }
+
+  .container-section{
+    padding: 0;
   }
 
   h2 {
@@ -135,6 +100,8 @@ h2 {
     white-space: nowrap;
     padding-top: 24px;
     padding-bottom: 32px;
+    align-items: center;
+    justify-content: center;
   }
 
   .bord {
@@ -146,23 +113,14 @@ h2 {
     height: 100%;
   }
 
-  .col-3 {
-    margin: 0 auto;
-    padding-bottom: 37px;
-    font-size: 15px;
-  }
-
   .text {
     font-size: 15px;
     display: flex;
     justify-content: center;
   }
 
-  .media {
-    display: inline;
-  }
 
-  .bookReal {
-    display: inline;
-  }
+
+
+
 }

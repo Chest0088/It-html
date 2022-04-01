@@ -21,13 +21,15 @@ input {
   background-position: center;
   background-repeat: no-repeat;
   min-height: 900px;
-  min-width: 100%;
   background-size: 100% 100%;
+  max-width: 1440px;
 }
 
 .container {
   padding: 51px 104px 0;
   overflow: hidden;
+  height: 100%;
+  max-width: 100%;
 }
 
 .logo {
@@ -42,6 +44,10 @@ input {
   font-weight: 400;
   font-size: 24px;
   justify-content: space-between;
+}
+
+.col-12{
+max-width: 100%;
 }
 
 .links {
@@ -190,7 +196,7 @@ form {
   border-radius: 8px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
   form {
     display: block;
     box-sizing: border-box;
@@ -200,6 +206,10 @@ form {
     border-radius: 0;
     background-color: #f5bd41;
     width: 358px;
+  }
+
+  .col-md-6 {
+    width: 100%;
   }
 
   .date {
@@ -233,6 +243,7 @@ form {
   h1 {
     font-size: 40px;
   }
+
   .logo {
     width: 150px;
   }
@@ -252,6 +263,7 @@ form {
   .container {
     width: 358px;
     margin: 0 auto;
+    padding: 0;
   }
 
   .item {
@@ -293,7 +305,11 @@ form {
   .container {
     margin: 0 auto;
     width: 328px;
-    padding: 16px;
+    padding: 0;
+  }
+
+  .col-sm-6{
+    width: 100%
   }
 
   h1 {
@@ -358,7 +374,6 @@ form {
     height: 48px;
     width: 152px;
     margin-top: 8px;
-    /*padding: 0;*/
   }
 
   .check-in-date {
