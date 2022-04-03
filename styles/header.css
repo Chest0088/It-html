@@ -46,12 +46,13 @@ input {
   justify-content: space-between;
 }
 
-.col-12{
-max-width: 100%;
+.col-12 {
+  max-width: 100%;
 }
 
 .links {
   display: flex;
+  position: relative;
 }
 
 a {
@@ -59,13 +60,39 @@ a {
   text-decoration: none;
 }
 
+.navs:hover {
+  color: #f5bd41;
+}
+
+.navs:hover::before {
+align-items: center;
+  transform: scaleX(1);
+  transition: transform 0.25s;
+}
+
+.navs:before {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: #f5bd41;
+  position: absolute;
+  margin: auto;
+  bottom: -12px;
+  transform: scaleX(0);
+
+}
+
 .night {
   padding-top: 5px;
   margin-left: 24px;
+  /*-webkit-transition: all .3s;*/
+  /*-o-transition: all .3s;*/
+  /*transition: all .3s;*/
 }
 
 .account {
   margin-left: 24px;
+  padding-bottom: 1px;
 }
 
 a:hover {
@@ -83,23 +110,6 @@ a:hover {
   padding-top: 6px;
 }
 
-.item:hover::before {
-  width: 50px;
-  height: 4px;
-  text-align: center;
-  background-color: #f5bd41;
-}
-
-.item::before {
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 1px;
-  bottom: -12px;
-  right: 0;
-  left: 0;
-  margin: auto;
-}
 
 svg:hover > path {
   fill: #f5bd41;
@@ -308,8 +318,8 @@ form {
     padding: 0;
   }
 
-  .col-sm-6{
-    width: 100%
+  .col-sm-6 {
+    width: 100%;
   }
 
   h1 {
