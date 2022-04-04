@@ -30,6 +30,7 @@ section {
 }
 
 .picture {
+  display: flex;
   padding-bottom: 20px;
 }
 
@@ -73,6 +74,8 @@ section {
 
   .picture {
     padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
   }
   .col-m-6 {
     width: 50%;
