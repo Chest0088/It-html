@@ -46,17 +46,40 @@ input {
   justify-content: space-between;
 }
 
-.col-12{
-max-width: 100%;
+.col-12 {
+  max-width: 100%;
 }
 
 .links {
   display: flex;
+  position: relative;
 }
 
 a {
   color: #ffffff;
   text-decoration: none;
+}
+
+.navs:hover {
+  color: #f5bd41;
+}
+
+.navs:hover::before {
+align-items: center;
+  transform: scaleX(1);
+  transition: transform 0.25s;
+}
+
+.navs:before {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: #f5bd41;
+  position: absolute;
+  margin: auto;
+  bottom: -12px;
+  transform: scaleX(0);
+
 }
 
 .night {
@@ -66,6 +89,7 @@ a {
 
 .account {
   margin-left: 24px;
+  padding-bottom: 1px;
 }
 
 a:hover {
@@ -83,24 +107,6 @@ a:hover {
   padding-top: 6px;
 }
 
-.item:hover::before {
-  width: 50px;
-  height: 4px;
-  text-align: center;
-  background-color: #f5bd41;
-}
-
-.item::before {
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 1px;
-  bottom: -12px;
-  right: 0;
-  left: 0;
-  margin: auto;
-}
-
 svg:hover > path {
   fill: #f5bd41;
 }
@@ -111,6 +117,7 @@ h1 {
   font-size: 50px;
   color: #ffffff;
   padding-top: 202px;
+  padding-bottom: 100px;
 }
 
 .menu {
@@ -200,7 +207,7 @@ form {
   form {
     display: block;
     box-sizing: border-box;
-    border: 4px solid #7ec630;
+    border: 4px solid #f5bd41;
     outline: #f5bd41;
     justify-content: center;
     border-radius: 0;
@@ -242,6 +249,7 @@ form {
 
   h1 {
     font-size: 40px;
+    padding-bottom: 0;
   }
 
   .logo {
@@ -308,8 +316,8 @@ form {
     padding: 0;
   }
 
-  .col-sm-6{
-    width: 100%
+  .col-sm-6 {
+    width: 100%;
   }
 
   h1 {
@@ -327,6 +335,15 @@ form {
     height: 48px;
     border-radius: 4px;
   }
+
+  /*input:focus ~ .label_one {*/
+  /*  transition: transform 0.25s;*/
+  /*}*/
+
+  /*input:not(:placeholder-shown) ~ .label_one{*/
+  /*  transform: translateY(-30px) translateX(10px) scale(0.75);*/
+  /*}*/
+
 
   .item {
     display: none;

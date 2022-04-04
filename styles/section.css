@@ -1,0 +1,156 @@
+@import "./font.css";
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", serif;
+}
+
+.homes_guests {
+  max-width: 1440px;
+  background-color: #eaf0f9;
+}
+
+.guests {
+  padding-top: 120px;
+  padding-bottom: 105px;
+  font-weight: 500;
+  font-size: 40px;
+  text-align: center;
+}
+
+.hostel {
+  display: inline-block;
+  /*width: 296px;*/
+  height: 435px;
+  padding-right: 16px;
+  margin: 0 auto;
+  padding-bottom: 120px;
+  width: 22%;
+}
+.hotel {
+  padding-top: 0;
+}
+
+.hostel-row {
+  position: relative;
+}
+
+.arrow {
+  border-radius: 50%;
+  filter: drop-shadow(0 4px 4px rgb(0, 0, 0, 0.25));
+  position: absolute;
+  right: 0;
+  top: calc(50% / 1 / 2);
+  left: 93%;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+}
+
+.svg_arrow {
+  stroke: gray;
+  stroke-width: 1;
+  transition: 0.6s;
+}
+
+.arrow:hover {
+  stroke-width: 3;
+}
+
+.friendship {
+  position: relative;
+  z-index: 0;
+}
+
+@media screen and (max-width: 1190px) {
+  .arrow {
+    left: 94%;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .arrow {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .guests {
+    padding-top: 20px;
+    font-size: 30px;
+    padding-bottom: 30px;
+  }
+
+  .hostel {
+    padding-bottom: 0;
+    height: 296px;
+    width: 200px;
+  }
+
+  .friendship {
+    padding-left: 24px;
+  }
+}
+
+@media screen and (max-width: 697px) {
+  .villa {
+    padding-left: 24px;
+  }
+
+  .friendship {
+    padding-left: 0;
+  }
+
+  .homes_guests {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .homes_guests {
+    width: 100%;
+  }
+
+  .hostel-row {
+    position: relative;
+    height: 193px;
+    padding-bottom: 56px;
+  }
+
+  .guests {
+    font-size: 28px;
+  }
+
+  .hostel {
+    width: 33%;
+    height: 193px;
+  }
+
+  .apartment {
+    padding-right: 0;
+  }
+
+  .hotel {
+    padding-left: 17px;
+  }
+
+  .villa {
+    display: none;
+  }
+
+  .friendship {
+    display: none;
+  }
+
+  .guests {
+    padding-top: 40px;
+    padding-bottom: 32px;
+  }
+  .arrow {
+    display: block;
+    position: absolute;
+    left: 82%;
+    width: 28px;
+    height: 28px;
+  }
+}
