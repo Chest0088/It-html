@@ -1,0 +1,474 @@
+@import "font.css";
+
+* {
+  font-family: "Roboto", serif;
+  margin: 0;
+  padding: 0;
+}
+
+.best__destinations {
+  max-width: 1440px;
+  max-height: 100%;
+  padding-left: 104px;
+  padding-right: 104px;
+}
+
+.button_all {
+  margin-bottom: 65px;
+  width: 618px;
+  height: 64px;
+  background: #f3f3f4;
+}
+
+.row_regions {
+  margin-right: -4px;
+}
+
+.button_one {
+  font-weight: 400;
+  font-size: 24px;
+  width: 192px;
+  height: 64px;
+  background-color: #3077c6;
+  border-radius: 8px;
+  outline: #3077c6;
+  border: none;
+}
+
+.button_two {
+  font-weight: 400;
+  font-size: 24px;
+  width: 192px;
+  height: 64px;
+  border-radius: 8px;
+  background-color: #f3f3f4;
+  outline: #f3f3f4;
+  border: none;
+}
+
+.button_three {
+  font-weight: 400;
+  font-size: 24px;
+  width: 238px;
+  height: 64px;
+  border-radius: 8px;
+  background-color: #f3f3f4;
+  outline: #f3f3f4;
+  border: none;
+}
+
+.button_places {
+  display: none;
+  font-weight: 400;
+  font-size: 24px;
+  width: 238px;
+  height: 64px;
+  border-radius: 8px;
+  background-color: #f3f3f4;
+  outline: #f3f3f4;
+  border: none;
+}
+
+.best {
+  padding-top: 120px;
+  padding-bottom: 104px;
+  font-weight: 500;
+  font-size: 40px;
+  text-align: center;
+}
+
+.container_destinations {
+  display: inline;
+  position: relative;
+}
+
+.country_four {
+  max-width: 1440px;
+  display: flex;
+  padding-bottom: 262px;
+}
+
+.country {
+  padding-right: 15px;
+  width: 295px;
+  height: 296px;
+}
+
+.city_name {
+  color: #3077c6;
+  font-weight: 400;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+figcaption {
+  padding-top: 24px;
+}
+
+.arrow_bottom {
+  position: absolute;
+  top: 600px;
+  left: 585px;
+  filter: drop-shadow(0 4px 4px rgb(0, 0, 0, 0.25));
+}
+
+.country_one {
+  position: relative;
+  display: block;
+  box-shadow: #383838;
+}
+
+.maldives_one {
+  display: block;
+  box-shadow: #383838;
+  box-shadow: rgba(0, 4, 70, 0);
+  -webkit-transition: all 1.75s;
+  -o-transition: all 1.75s;
+  transition: all 1.75s;
+}
+
+.maldives_one:hover {
+  opacity: 0.6;
+  position: relative;
+  -webkit-transition: all 1.75s;
+  -o-transition: all 1.75s;
+  transition: all 1.75s;
+}
+
+.maldives_one:hover .maldives {
+  visibility: visible;
+}
+
+.book_now {
+  position: absolute;
+  content: "";
+  bottom: 50%;
+  background: #ffffff;
+  color: #3077c6;
+  font-size: 18px;
+  left: 25%;
+  width: 128px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid #3077c6;
+  display: none;
+  -webkit-transition: all 1.75s;
+  -o-transition: all 1.75s;
+  transition: all 1.75s;
+}
+
+.country_one:hover .book_now {
+  display: block;
+}
+
+.svg__arrow {
+  display: none;
+}
+
+.container_sign_up {
+  position: relative;
+  display: flex;
+  width: 1232px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: #eaf0f9;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  width: 86px;
+  height: 86px;
+  padding-left: 24px;
+  padding-top: 57px;
+  padding-right: 24px;
+}
+
+.sign__up {
+  font-weight: 500;
+  font-size: 24px;
+  padding-top: 51px;
+  padding-bottom: 21px;
+}
+
+.button_sign {
+  width: 128px;
+  height: 48px;
+  font-weight: 400;
+  font-size: 18px;
+  color: #3077c6;
+  border-radius: 8px;
+  border: 1px solid #3077c6;
+  background-color: #ffffff;
+}
+
+.close {
+  position: absolute;
+  top: 24px;
+  left: 1180px;
+  width: 26px;
+  height: 26px;
+  justify-content: end;
+}
+
+.logo_little {
+  width: 58px;
+  height: 58px;
+  display: none;
+}
+
+.close_mini {
+  display: none;
+}
+
+.install {
+  display: none;
+}
+
+.sign__up_two {
+  display: none;
+}
+
+@media screen and (max-width: 1190px) {
+  .country_four {
+    flex-wrap: wrap;
+  }
+
+  .country_four {
+    justify-content: center;
+    padding-top: 20px;
+  }
+
+  .book_now {
+    display: none;
+  }
+
+  .arrow_bottom {
+    display: none;
+  }
+
+  .button_all {
+    margin: 0 auto;
+  }
+
+  .button_places {
+    display: none;
+  }
+  figcaption {
+    padding-top: 0;
+    padding-bottom: 25px;
+  }
+
+  .container_sign_up {
+    max-width: 650px;
+  }
+
+  .close {
+    left: 600px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .button_one {
+    width: 138px;
+    height: 48px;
+    font-size: 15px;
+  }
+
+  .button_two {
+    width: 138px;
+    height: 48px;
+    font-size: 15px;
+  }
+
+  .button_three {
+    width: 138px;
+    height: 48px;
+    font-size: 15px;
+  }
+
+  .button_all {
+    width: 410px;
+    height: 48px;
+    text-align: center;
+  }
+
+  .button_places {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 715px) {
+  .container_sign_up {
+    width: 100%;
+  }
+
+  .sign__up {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .button_all {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .best__destinations {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .best {
+    padding-top: 40px;
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    flex-wrap: nowrap;
+  }
+
+  .button_all {
+    width: 100%;
+    /*width: 329px;*/
+    height: 32px;
+    display: block;
+    background-color: #ffffff;
+  }
+
+  .button_one {
+    margin-right: 16px;
+    color: white;
+    width: 99px;
+    height: 32px;
+    font-size: 19px;
+    border-radius: 4px;
+  }
+
+  .button_two {
+    margin-right: 16px;
+    width: 99px;
+    height: 32px;
+    font-size: 19px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: 1px solid #f3f3f4;
+  }
+
+  .button_places {
+    display: inline;
+    width: 99px;
+    height: 32px;
+    font-size: 19px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: 1px solid #f3f3f4;
+  }
+
+  .button_three {
+    display: none;
+  }
+
+  .maldives {
+    display: flex;
+    width: 156px;
+    max-height: 156px;
+  }
+
+  .spain {
+    width: 100%;
+    padding: 0;
+
+    height: 156px;
+  }
+
+  .norway {
+    display: none;
+  }
+
+  .island {
+    display: none;
+  }
+
+  .norway_name {
+    display: none;
+  }
+
+  .city_name {
+    padding-top: 8px;
+    font-size: 12px;
+    display: flex;
+    justify-content: start;
+  }
+
+  .country_four {
+    position: relative;
+    max-width: 100%;
+    flex-wrap: nowrap;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  .svg__arrow {
+    position: absolute;
+    top: 90px;
+    left: 83%;
+    display: block;
+    width: 28px;
+    height: 28px;
+  }
+
+  .country_one:hover .book_now {
+    display: none;
+  }
+
+  .container_sign_up {
+    height: 106px;
+  }
+
+  .user {
+    display: none;
+  }
+
+  .button_sign {
+    display: none;
+  }
+
+  .close_mini {
+    position: absolute;
+    top: 40%;
+    left: 17px;
+    display: block;
+    width: 16px;
+    height: 16px;
+  }
+
+  .logo_little {
+    display: block;
+    padding-left: 49px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .sign__up {
+    display: none;
+  }
+
+  .sign__up_two {
+    display: block;
+    padding-left: 18px;
+    flex-wrap: wrap;
+    font-weight: 400;
+    font-size: 12px;
+    padding-top: 39px;
+  }
+  .install {
+    display: block;
+    color: #3077c6;
+    font-weight: 500;
+    font-size: 14px;
+    padding-top: 45px;
+    padding-left: 16px;
+  }
+}

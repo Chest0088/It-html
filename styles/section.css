@@ -107,6 +107,7 @@
 }
 
 @media screen and (max-width: 480px) {
+
   .homes_guests {
     width: 100%;
   }
@@ -153,4 +154,5 @@
     width: 28px;
     height: 28px;
   }
+
 }
