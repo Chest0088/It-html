@@ -20,7 +20,7 @@ input {
   background-image: url("../images/castelmezzano.png");
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 900px;
+  height: 900px;
   background-size: 100% 100%;
   max-width: 1440px;
 }
@@ -151,7 +151,7 @@ input:focus {
 }
 
 .date {
-  width: 259px;
+  width: 130px;
   height: 64px;
   padding-left: 24px;
   position: relative;
@@ -159,7 +159,8 @@ input:focus {
 }
 
 .check-in-date {
-  display: none;
+  width: 130px;
+  /*display: none;*/
 }
 
 .children {
@@ -178,6 +179,7 @@ input:focus {
   border-radius: 8px;
   background-color: #3077c6;
   border: none;
+  cursor: pointer;
 }
 
 .foot {
@@ -202,6 +204,16 @@ form {
   background: white;
   border-radius: 8px;
 }
+
+@media screen and (max-width: 1150px){
+
+  .hotel{
+display: none;
+  }
+
+}
+
+
 
 @media screen and (max-width: 850px) {
   form {
@@ -300,6 +312,11 @@ form {
     margin-left: 16px;
     padding-top: 15px;
   }
+
+  .check-in-date{
+    display: none;
+  }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -307,7 +324,7 @@ form {
     margin: 0;
     background-size: cover;
     max-width: 100%;
-    max-height: 533px;
+    max-height: 631px;
   }
 
   .container {
@@ -335,15 +352,6 @@ form {
     height: 48px;
     border-radius: 4px;
   }
-
-  /*input:focus ~ .label_one {*/
-  /*  transition: transform 0.25s;*/
-  /*}*/
-
-  /*input:not(:placeholder-shown) ~ .label_one{*/
-  /*  transform: translateY(-30px) translateX(10px) scale(0.75);*/
-  /*}*/
-
 
   .item {
     display: none;
