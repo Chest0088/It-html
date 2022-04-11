@@ -38,8 +38,9 @@ li {
   color: #ffffff;
   display: flex;
   padding-bottom: 120px;
-  margin-left: 103px;
   margin-top: 64px;
+  padding-left: 140px;
+  font-size: 12px;
 }
 
 a {
