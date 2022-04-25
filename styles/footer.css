@@ -80,6 +80,10 @@ a {
     padding: 0;
   }
 
+  .footer{
+    order: 2;
+  }
+
   li {
     display: none;
   }

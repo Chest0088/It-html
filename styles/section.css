@@ -70,7 +70,7 @@
     left: 94%;
   }
 
-  .hostel-row{
+  .hostel-row {
     padding-left: 0;
   }
 }
@@ -113,15 +113,25 @@
 }
 
 @media screen and (max-width: 480px) {
-
   .homes_guests {
+    text-align: center;
     width: 100%;
+  }
+
+  .hostel {
+    margin: 0;
+    padding-left: 0;
+  }
+
+  .hotel{
+
   }
 
   .hostel-row {
     position: relative;
-
-    width: 349px;
+    display: flex;
+    justify-content: center;
+    /*width: 349px;*/
     /*height: 193px;*/
     /*padding-bottom: 56px;*/
   }
@@ -132,15 +142,10 @@
 
   .hostel {
     width: 156px;
-
   }
 
   .apartment {
     padding-right: 0;
-  }
-
-  .hotel {
-    padding-left: 17px;
   }
 
   .villa {
@@ -159,9 +164,19 @@
     display: block;
     position: absolute;
     top: 35%;
-    left: 96%;
+    left: 85%;
     width: 28px;
     height: 28px;
   }
+}
 
+@media screen and (max-width: 420px){
+  .arrow {
+    display: block;
+    position: absolute;
+    top: 35%;
+    left: 89%;
+    width: 28px;
+    height: 28px;
+  }
 }

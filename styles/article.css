@@ -141,8 +141,6 @@ figcaption {
 .country_one:hover {
   opacity: 0.6;
   display: block;
-  /*box-shadow: inset 0 4px 70px rgba(56,56,56,0.5) ;*/
-  /*background: rgba(56,56,56,0.4);*/
   position: relative;
   -webkit-transition: all 1.25s;
   -o-transition: all 1.25s;
@@ -242,6 +240,10 @@ figcaption {
   display: none;
 }
 
+.aside_bottom{
+  display: none;
+}
+
 @media screen and (max-width: 1190px) {
   .country_four {
     flex-wrap: wrap;
@@ -334,6 +336,12 @@ figcaption {
     padding-right: 0;
   }
 
+
+  .container_sign_up{
+    display: none;
+    background-color: #ffffff;
+  }
+
   .best {
     padding-top: 40px;
     padding-bottom: 32px;
@@ -345,7 +353,6 @@ figcaption {
 
   .button_all {
     width: 100%;
-    /*width: 329px;*/
     height: 32px;
     display: block;
     background-color: #ffffff;
@@ -385,7 +392,7 @@ figcaption {
   }
 
   .country__mini{
-    padding-left: 0px;
+    padding-left: 0;
     width: 156px;
     height: 178px;
   }
@@ -506,6 +513,13 @@ figcaption {
   .close{
     display: none;
   }
+
+  .aside_bottom{
+    display: flex;
+    position: relative;
+    height: 106px;
+  }
+
 }
 
 @media screen and (max-width: 420px){
@@ -521,6 +535,8 @@ figcaption {
   .country_one:hover{
     opacity: 1;
   }
+
+
 }
 
 
