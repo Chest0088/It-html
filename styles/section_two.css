@@ -1,0 +1,174 @@
+@import "font.css";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.reviews {
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 104px;
+    padding-top: 120px;
+}
+
+.best__destinations{
+    padding-right: 0;
+}
+
+.reviews_max {
+    max-width: 1440px;
+    padding: 0;
+}
+
+.reviews_mini {
+    font-weight: 500;
+    font-size: 28px;
+    text-align: center;
+    display: none;
+}
+
+.container_guests_reviews {
+    position: relative;
+    max-width: 1440px;
+}
+
+.hotel__reviews {
+    width: 30%;
+    display: inline-block;
+    /*flex-wrap: nowrap;*/
+    padding-right: 16px;
+    padding-bottom: 120px;
+}
+
+.marocco {
+    padding-right: 0;
+}
+
+.arrow_reviews {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 60px;
+    top: 20%;
+    cursor: pointer;
+}
+
+.navigation {
+    width: 56px;
+    height: 8px;
+    display: none;
+}
+
+@media screen and (max-width: 1140px) {
+    .arrow_reviews {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        right: 35px;
+        top: 20%;
+        cursor: pointer;
+    }
+
+    @media screen and (max-width: 1000px) {
+        .arrow_reviews {
+            display: none;
+        }
+
+        .best__destinations{
+            padding-left: 50px;
+            padding-right: 0;
+        }
+
+        .container_guests_reviews {
+            padding-left: 0;
+        }
+
+        .marocco {
+            display: none;
+        }
+
+
+        .hotel__reviews {
+            width: 45%;
+            padding-left: 0;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .marocco_arrow {
+        display: none;
+    }
+
+    .marocco {
+        display: none;
+    }
+
+    .best__destinations{
+        padding: 0;
+    }
+
+    .container_guests_reviews {
+        padding-left: 52px;
+    }
+
+    .hotel__reviews {
+margin: 0;
+        width: 45%;
+    }
+
+    .reviews {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .reviews {
+        display: none;
+    }
+    .reviews_max{
+        order: 0;
+    }
+
+    .reviews_max {
+        background: #eaf0f9;
+    }
+
+
+    .reviews_mini {
+        display: block;
+        padding-top: 40px;
+        padding-bottom: 32px;
+        margin: 0;
+    }
+
+    .rotterdam {
+        display: none;
+    }
+
+    .container_guests_reviews {
+        padding-left: 0;
+        position: relative;
+    }
+
+    .bali {
+        position: relative;
+        width: 96%;
+        background-size: cover;
+        padding-left: 18px;
+    }
+
+    .navigation {
+        display: block;
+        position: absolute;
+        right: 40%;
+        bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .bali {
+        padding-left: 0;
+    }
+}
